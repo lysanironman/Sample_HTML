@@ -1,31 +1,28 @@
 body {
     font-family: arial, helvetica, sans-serif;
     font-size: 14px;
-    color: black;
-    background-color: #ffc;
+    color: white;
+    background: white url(https://cdn.discordapp.com/attachments/529309925281628170/658540943271788585/Chakra_sigil_gif.gif) repeat top;
+    background-color: rgb(161, 161, 87);
     margin: 20px;
     padding: 0;
 }
-
-/* This is a comment, by the way */
-
+/*Above, we see that the font is going to be Arial, with 14px font size. There will be a background color of whie, but the image
+URL will display the image of a .gif file. This file will repeat at the top and thus, centering it in the middle of the screen.  */
 p {
     line-height: 21px;
 }
 
 h1 {
-    color: #ffc;
+    color: #36e413;
     background-color: #900;
     font-size: 2em;
-    margin: 0;
     margin-bottom: 7px;
     padding: 4px;
     font-style: italic;
     text-align: center;
     letter-spacing: 0.5em;
-    border-bottom-style: solid;
-    border-bottom-width: 0.5em;
-    border-bottom-color: #c00;
+    border: 0.5em solid Yellow;
 }
 
 h2 {
@@ -38,7 +35,7 @@ h2 {
 }
 
 h3 {
-    color: #999;
+    color: silver;
     font-size: 1.25em;
 }
 
@@ -60,11 +57,24 @@ strong {
 li {
     color: #900;
     font-style: italic;
+    background: black;
 }
 
 table {
-    background-color: #156;
+    background-color: rgb(165, 21, 141);
+    border: inset;
+    border-color: mediumaquamarine;
+    border-width: thick;
 }
+
 .purpleExample {
     color: purple;
+    font-weight: bolder;
+    background: #900;
+}
+li:before {
+    content: "POW! ";
+    background: red;
+    color: #fc0;
+    /*This is an example of a pseudo element*/
 }
