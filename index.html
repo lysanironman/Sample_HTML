@@ -6,9 +6,31 @@
 </head>
 <body>
 <h1>(h1) The Biggest Heading (h1)</h1>
+<p>According to <cite>the Bible</cite>, after six days God said <q>screw this for a lark, I'm having a nap</q>.</p>
 <h2>(h2)Second Heading(h2)</h2>
 <p><em>(em)Italics(em).</em> <strong>(strong)BOLD(strong)</strong></p>
 <h2>(h2)Unordered List(h2) (use <em>ul</em>)</h2>
+<p>(abbr title equals"")This web site is about <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+<table>
+    <tr>
+        <th>Column 1 heading</th>
+        <th>Column 2 heading</th>
+        <th>Column 3 heading</th>
+    </tr>
+    <tr>
+        <td>Row 2, cell 1</td>
+        <td colspan="2">Row 2, cell 2, also spanning Row 2, cell 3</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Row 3, cell 1, also spanning Row 4, cell 1</td>
+        <td>Row 3, cell 2</td>
+        <td>Row 3, cell 3</td>
+    </tr>
+    <tr>
+        <td>Row 4, cell 2</td>
+        <td>Row 4, cell 3</td>
+    </tr>
+</table>
 <div>
 <ul>
     <li>(ul)(li)Uses Bullet Points(/li)</li>
@@ -52,6 +74,9 @@
     </tr>
    </table>
    <p>(/table)</p>
+   <div id="scissors">
+    <p>This is <span class="paper">crazy</span></p>
+</div>
 <h3>Some random form</h3>
 <p><strong>Note:</strong> It looks the part, but won't do a damned thing.</p>
 <form action="somescript.php" method="post">
