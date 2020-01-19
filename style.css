@@ -1,6 +1,7 @@
 body {
     font-family: arial, helvetica, sans-serif;
     font-size: 14px;
+    text-align: center;
     color: white;
     background: white url(https://cdn.discordapp.com/attachments/529309925281628170/658540943271788585/Chakra_sigil_gif.gif) repeat top;
     background-color: rgb(161, 161, 87);
@@ -60,11 +61,17 @@ li {
     background: black;
 }
 
-table {
+table  {
+    Display:grid;
+    grid-column:2/4;
     background-color: rgb(165, 21, 141);
     border: inset;
     border-color: mediumaquamarine;
     border-width: thick;
+    text-align: center;
+/*There is a reason this graph looked funky!That's because it was coded to display as a grid, taking 
+into account the 2nd column and 4th column for the placement.*/
+   
 }
 
 .purpleExample {
@@ -73,8 +80,16 @@ table {
     background: #900;
 }
 li:before {
-    content: "POW! ";
+    content: "li:before { content:"" ";
     background: red;
     color: #fc0;
     /*This is an example of a pseudo element*/
+}
+#navigation {
+    float:left;
+  
+}
+
+#content {
+    margin-left: 200px;
 }

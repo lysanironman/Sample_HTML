@@ -2,35 +2,45 @@
 <html>
 <head>
     <title>Title of Webpage</title>
+<link rel="resetstyle" href="reset.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <!--This is where the header is contained as well as the title that displays the website name in the tab at the top of the browser.
 <link rel-""href=""> will link a CSS external file to the html in order to display a vast array of features. -->
 <body>
-<h1>(h1) The Biggest Heading (h1)</h1>
-<p>According to <cite>the Bible</cite>, after six days God said <q>screw this for a lark, I'm having a nap</q>.</p>
+<h1>The Biggest Heading</h1>
+<p><Strong>SAMPLE:</Strong>According to <cite>the Bible</cite>, after six days God said <q>screw this for a lark, I'm having a nap</q>.</p>
 <h2>(h2)Second Heading(h2)</h2>
+<!--<h1> tags code for the largest heading you can have while <p> involves the creation of a paragraph. Furthermore, <strong> <cite> and <q> tags 
+    can be used in order to modify the text to facilitate a specific set of goals with displaying relevant content-->
 <p><em>(em)Italics(em).</em> <strong>(strong)BOLD(strong)</strong></p>
-<h2>(h2)Unordered List(h2) (use <em>ul</em>)</h2>
-<p>(abbr title equals"")This web site is about <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
-<table>
+<h2>Unordered List</h2>
+<p>This web site is about <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+<!--<abbr title="Doctore">Dr.</abbr> is another example of how to utilize this tag.
+    <h2> is the second largest heading option. -->
+<table align="center">
     <tr>
-        <th>Column 1 heading</th>
-        <th>Column 2 heading</th>
-        <th>Column 3 heading</th>
+        <th>Heading C1</th>
+        <th>Heading C2</th>
+        <th>Heading C3</th>
     </tr>
+    <!--This Table Row constitutes the Heading Rows that will label each column below it. <th> stands for 'Table Heading'.
+        **NOTE** It is extremely important to know about the align="" capabilities because they allow for smooth formatting for centered text and the like. -->
     <tr>
-        <td>Row 2, cell 1</td>
-        <td colspan="2">Row 2, cell 2, also spanning Row 2, cell 3</td>
+        <td>R2:c1</td>
+        <td colspan="2">R2:c2,c3</td>
     </tr>
+    <!--This creates a second row. The first <td> tag indicates the first cell of the row. The second 
+        <td> tag contains within it colspan="" which in this case equals 2 and thus takes up cells 2 and 3 of the second row.-->
     <tr>
-        <td rowspan="2">Row 3, cell 1, also spanning Row 4, cell 1</td>
-        <td>Row 3, cell 2</td>
-        <td>Row 3, cell 3</td>
+        <td rowspan="2">R3:c1,R4:c1</td>
+        <td>R3:c2</td>
+        <td>R3:c3</td>
     </tr>
+    <!--This creates the third row. <td rowspan="2"> means this data will span C1:R-->
     <tr>
-        <td>Row 4, cell 2</td>
-        <td>Row 4, cell 3</td>
+        <td>R4:c2</td>
+        <td>R4:c3</td>
     </tr>
 </table>
 <div>
@@ -52,7 +62,7 @@
 <p>First, you type (a href then the equal sign followed by web address in quotes)Then you type (img src equal sign address of image followed by its width, height, and alternate namein quotes)</p>
 <p><a href="http://www.htmldog.com"><img src="http://www.htmldog.com/badge1.gif" width="120" height="90" alt="HTML Dog"></a></p>
 <h3>(h3)Open and close the table(h3)</h3>
-<table>
+<table align="center">
     <p>(table)</p>
     <tr>
         <td>(tr=1)(td)>Row 1, cell 1(/td)</td>
@@ -109,5 +119,18 @@
 </dl>
 <p>If you add the line <code><var>givevaderachuckle</var> = true;</code> to the <code>destroy_planet</code> subroutine and then type <kbd>ilovejabba</kbd> into the console, the big bad green Death Star laser will etch <samp>Slug Lover!</samp> on the planet's surface.</p>
 <bdo dir="rtl">Golf Wang</bdo>
+<div id="navigation">
+    <ul>
+        <li><a href="this.html">This</a></li>
+        <li><a href="that.html">That</a></li>
+        <li><a href="theOther.html">The Other</a></li>
+    </ul>
+</div>
+
+<div id="content">
+    <h1>Ra ra banjo banjo</h1>
+    <p>Welcome to the Ra ra banjo banjo page. Ra ra banjo banjo. Ra ra banjo banjo. Ra ra banjo banjo.</p>
+    <p>(Ra ra banjo banjo)</p>
+</div>
 </body>
 </html>
